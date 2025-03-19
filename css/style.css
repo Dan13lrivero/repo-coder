@@ -161,9 +161,10 @@ img {
     gap: 15px;
     flex-wrap: wrap;
 }
-img:hover {
+.redes_container img:hover {
     transform: scale(1.15);
 }
+
 .logo, .biography {
     text-align: center;
 }
