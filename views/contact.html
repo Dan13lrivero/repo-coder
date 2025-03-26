@@ -10,18 +10,34 @@
 </head>
 <body>
     <header>
-        <nav>
-            <label for="" class="logo-nav">
-                <img class="logo-nav" src="../assets/img/logo proyecto.jpg" alt="logo de la empresa">
-            </label>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./about_me.html">About me</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-transparent navbar-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item me-5">
+                    <a class="nav-link active text-white fs-1" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-1" href="./services.html">Services</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-1" href="./about_me.html">About me</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-1" href="./blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-1" href="#">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="text-white">
         <div class="container">
             <!--Sección de conctacto con formulario-->
             <section>
@@ -61,8 +77,8 @@
                 </form>
             </section>
         </div>
-    </header> 
-    <footer>
+    </main>
+    <footer class="text-white">
         <p>2025 Daniel Rivero | All Rights Reserved</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
