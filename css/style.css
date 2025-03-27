@@ -82,10 +82,8 @@ img {
         padding: 15px;
     }
     .text_blog {
-        font-size: 18px;
         max-width: 90%;
         padding: 10px;
-        margin: 0 auto;
         word-wrap: break-word;
         overflow: break-word;
     }
@@ -99,7 +97,7 @@ img {
         margin-right: 0,5%;
     }
     .container {
-        width: 100%; /* Ajusta el ancho al 80% en pantallas pequeñas */
+        width: 100%;
     }
 }
 .container {
@@ -108,78 +106,9 @@ img {
     margin: 0 auto;
     padding: 20px;
 }
-.img_blog {
-    display: flex;
-    justify-content: left;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-.logo, .biography {
-    text-align: center;
-}
-.redes_container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0;
-}
-.redes, .redes_container img, footer .redes img {
-    object-fit: contain;
-    border-radius: 50%;
-}
 .redes {
      width: 60px;
      }
-.redes_container img {
-     width: 50px; height: 50px; 
-}
-footer .redes img {
-     width: 40px; height: 40px;
-}
-.contact_form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-}
-footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Distribuye columnas automáticamente */
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-footer ul li {
-    margin-bottom: 5px;
-}
-footer a {
-    color: white;
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-footer .redes {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.live {
-    align-items: center;
-}
-.text_blog {
-margin: auto;
-font-size: 30px;
-}
 .logos_blog {
     width: 90px;
     height: 90px;
@@ -189,29 +118,6 @@ font-size: 30px;
     width:50%;
     margin: 0 auto;
     border-radius: 15px;
-}
-label {
-    color:white;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-input {
-    display: block;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-textarea {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.send {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.formulario {
-    display: flex;
-    flex-direction: column;
 }
 .social_box {
     border: 2px solid white;
