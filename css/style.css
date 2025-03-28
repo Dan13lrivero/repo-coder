@@ -6,30 +6,73 @@
 body {
     background:linear-gradient(-45deg, blue, black,black);
     font-family: 'Poppins', sans-serif;
-    position: relative;
-    padding-bottom: 16em;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0; 
 }
 img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
 }
+.redes {
+    width: 80px;
+    }
+.container {
+        max-width: 100%; 
+        padding: 20px;
+    }
+.logos_blog {
+        width: 120px;
+        height: 120px;
+    }
+.blog-container {
+        background: rgba(255, 255, 255, 0.2);
+        width:50%;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 10px;
+    }
+.social_box {
+        border: 2px solid white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+.carousel .carousel-inner img {
+        border-radius: 0 !important;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover; 
+        max-height: 500px; 
+    }
 /* Comienzo de media queries*/
 /* Tamaño máximo desktop */
 @media (min-width: 1024px) {
     img {
         max-width: 400px; 
     }
-    footer {
-        font-size: 16px;
-        padding: 20px;
-        max-width: 1024px;
-        margin: 0 auto;
-    }
     .carousel-control-prev, .carousel-control-next {
         position: absolute;
         margin-left: 20%;
         margin-right: 20%;
+    }
+    p, li {
+        font-size: 30px;
+        
+    }
+    .blog-container {
+        background: rgba(255, 255, 255, 0.2);
+        width:80%;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 10px;
     }
 }
 /* Estilos para tablets (pantallas de 768px a 1024px) */
@@ -38,23 +81,18 @@ img {
         max-width: 80%;
         height: auto;
     }
-
-    .img_blog {
-        justify-content: center;
+    p, li {
+        font-size: 25px;
     }
-
+    .blog-container {
+        background: rgba(255, 255, 255, 0.2);
+        width:80%;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 10px;
+    }
     .redes {
-        width: 50px;
-        height: 50px;
-    }
-
-    footer {
-        font-size: 14px;
-        padding: 18px;
-    }
-    .img-fixed-size {
-        width: 80%;  
-        height: auto;
+        width: 110px;
     }
 }
 /* Estilos para celulares (pantallas menores a 768px) */
@@ -63,23 +101,8 @@ img {
         max-width: 100%;
         height: auto;
     }
-
-    .img_blog {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .redes {
-        width: 40px;
-    }
-
-    p {
-        font-size: 14px;
-        margin: 10px;
-    }
-    footer {
-        font-size: 12px;
-        padding: 15px;
+    p, li {
+        font-size: 24px;
     }
     .text_blog {
         max-width: 90%;
@@ -87,51 +110,23 @@ img {
         word-wrap: break-word;
         overflow: break-word;
     }
-    .redes {
-        width: 40px;
-        height: 40px;
-    }
     .carousel-control-prev, .carousel-control-next {
         position: absolute;
         margin-left: 0,5%;
         margin-right: 0,5%;
     }
-    .container {
-        width: 100%;
+    .blog-container {
+        background: rgba(255, 255, 255, 0.2);
+        width:80%;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 10px;
     }
-}
-.container {
-    max-width: 100%; 
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
-.redes {
-     width: 60px;
-     }
-.logos_blog {
-    width: 90px;
-    height: 90px;
-}
-.container {
-    background: rgba(255, 255, 255, 0.2);
-    width:50%;
-    margin: 0 auto;
-    border-radius: 15px;
-}
-.social_box {
-    border: 2px solid white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-.carousel .carousel-inner img {
-    border-radius: 0 !important;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover; 
-    max-height: 500px; 
+    .redes {
+        width: 60px;
+    }
+    .logos_blog {
+        width: 70px;
+        height: 70px;
+    }
 }
