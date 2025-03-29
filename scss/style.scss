@@ -22,6 +22,7 @@ $body-bg:linear-gradient(-45deg, blue, black,black);
     padding: 0;
     box-sizing: border-box;
 }
+/* Primer Nesting */
 body {
     background: $body-bg;
     main {
@@ -35,29 +36,28 @@ body {
         }
     }
 }
+/* Segundo Nesting */
+.social_box {
+    @include wh(80%, auto);
+    @extend .mp;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    .logos_blog {
+        @include wh(120px, 120px);
+    }
+}
 .redes {
-    @include wh(80px, auto)
+    @include wh(80px, auto);
+    &:hover {
+        transform: scale(1.2);
+    }
     }
     .container {
         max-width: 100%; 
         padding: 20px;
-    }
-.logos_blog {
-    @include wh(120px, 120px);
-    }
-.blog-container {
-        @include wh(50%, auto);
-        @extend .mp;
-        background: $container-bg;
-        border-radius: 15px;
-    }
-.social_box {
-        @include wh(80%, auto);
-        @extend .mp;
-        border: 2px solid white;
-        border-radius: 10px;
-        text-align: center;
-        margin-bottom: 20px;
     }
 .carousel .carousel-inner img {
         border-radius: 0 !important;
@@ -73,8 +73,8 @@ body {
     }
     .carousel-control-prev, .carousel-control-next {
         position: absolute;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
     p, li {
         font-size: 30px;

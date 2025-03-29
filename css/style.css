@@ -2,7 +2,7 @@
 /* Variables */
 /* Mixin */
 /* Extend */
-.mp, .social_box, .blog-container {
+.mp, .social_box {
   margin: 0 auto;
   padding: 20px;
 }
@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
+/* Primer Nesting */
 body {
   background: linear-gradient(-45deg, blue, black, black);
 }
@@ -29,35 +30,31 @@ body main img {
   border-radius: 50%;
 }
 
+/* Segundo Nesting */
+.social_box {
+  width: 80%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.social_box .logos_blog {
+  width: 120px;
+  height: 120px;
+}
+
 .redes {
   width: 80px;
   height: auto;
+}
+.redes:hover {
+  transform: scale(1.2);
 }
 
 .container {
   max-width: 100%;
   padding: 20px;
-}
-
-.logos_blog {
-  width: 120px;
-  height: 120px;
-}
-
-.blog-container {
-  width: 50%;
-  height: auto;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-}
-
-.social_box {
-  width: 80%;
-  height: auto;
-  border: 2px solid white;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .carousel .carousel-inner img {
@@ -75,8 +72,8 @@ body main img {
   }
   .carousel-control-prev, .carousel-control-next {
     position: absolute;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   p, li {
     font-size: 30px;
