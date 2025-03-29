@@ -1,0 +1,144 @@
+/* Variables */
+$container-bg: rgba(255, 255, 255, 0.2);
+$body-bg:linear-gradient(-45deg, blue, black,black);
+
+/* Mixin */
+@mixin flexbox ($direction, $jcontent, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jcontent;
+    align-items: $align;
+}
+@mixin wh ($width, $height) {
+    width: $width;
+    height: $height;
+}
+/* Extend */ 
+.mp {
+    margin: 0 auto;
+    padding: 20px;
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: $body-bg;
+    main {
+        @include flexbox(column, center, center);
+    min-height: 100vh;
+    padding-bottom: 0;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+}
+.redes {
+    @include wh(80px, auto)
+    }
+    .container {
+        max-width: 100%; 
+        padding: 20px;
+    }
+.logos_blog {
+    @include wh(120px, 120px);
+    }
+.blog-container {
+        @include wh(50%, auto);
+        @extend .mp;
+        background: $container-bg;
+        border-radius: 15px;
+    }
+.social_box {
+        @include wh(80%, auto);
+        @extend .mp;
+        border: 2px solid white;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+.carousel .carousel-inner img {
+        border-radius: 0 !important;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover; 
+       }
+    /* Comienzo de media queries*/
+/* Tamaño máximo desktop */
+@media (min-width: 1024px) {
+    img {
+        max-width: 400px !important; 
+    }
+    .carousel-control-prev, .carousel-control-next {
+        position: absolute;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    p, li {
+        font-size: 30px;
+        
+    }
+    .blog-container {
+        background: $container-bg;
+        width:80%;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+/* Estilos para tablets (pantallas de 768px a 1024px) */
+@media (max-width: 1024px) {
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+    p, li {
+        font-size: 25px;
+    }
+    .blog-container {
+        background: $container-bg;
+        width:80%;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .redes {
+        width: 110px;
+    }
+}
+/* Estilos para celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    p, li {
+        font-size: 24px;
+    }
+    .text_blog {
+        max-width: 90%;
+        padding: 10px;
+        word-wrap: break-word;
+        overflow: break-word;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        position: absolute;
+        margin-left: 0,5%;
+        margin-right: 0,5%;
+    }
+    .blog-container {
+        margin: 0 auto;
+        padding: 10px;
+        background: $container-bg;
+        width:80%;
+        border-radius: 15px;
+    }
+    .redes {
+        width: 60px;
+    }
+    .logos_blog {
+        @include wh(70px, 70px);
+    }
+}
