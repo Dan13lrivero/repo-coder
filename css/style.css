@@ -2,11 +2,24 @@
 /* Variables */
 /* Mixin */
 /* Extend */
+.transf-scale, .redes:hover, .social_box .logos_blog:hover {
+  transform: scale(1.2); /* Aumenta el tamaño un 20% */
+}
+
 .mp, .social_box {
   margin: 0 auto;
   padding: 20px;
+  /* Animación */
 }
 
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   padding: 0;
   box-sizing: border-box;
@@ -43,15 +56,10 @@ body main img {
   width: 120px;
   height: 120px;
 }
-
 .redes {
   width: 80px;
   height: auto;
 }
-.redes:hover {
-  transform: scale(1.2);
-}
-
 .container {
   max-width: 100%;
   padding: 20px;
@@ -86,6 +94,11 @@ body main img {
     padding: 10px;
   }
 }
+.fadeIn {
+  opacity: 0;
+  animation: myAnimation 1s infinite;
+}
+
 /* Estilos para tablets (pantallas de 768px a 1024px) */
 @media (max-width: 1024px) {
   img {

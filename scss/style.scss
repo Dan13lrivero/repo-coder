@@ -1,7 +1,6 @@
 /* Variables */
 $container-bg: rgba(255, 255, 255, 0.2);
 $body-bg:linear-gradient(-45deg, blue, black,black);
-
 /* Mixin */
 @mixin flexbox ($direction, $jcontent, $align) {
     display: flex;
@@ -14,14 +13,22 @@ $body-bg:linear-gradient(-45deg, blue, black,black);
     height: $height;
 }
 /* Extend */ 
+.transf-scale {
+    transform: scale(1.2); /* Aumenta el tamaño un 20% */
+}
 .mp {
     margin: 0 auto;
     padding: 20px;
+/* Animación */
+}
+@keyframes myAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 * {
     padding: 0;
     box-sizing: border-box;
-}
+} 
 /* Primer Nesting */
 body {
     background: $body-bg;
@@ -47,12 +54,16 @@ body {
 
     .logos_blog {
         @include wh(120px, 120px);
+        &:hover {
+            @extend .transf-scale;
+        }
+        
     }
 }
 .redes {
     @include wh(80px, auto);
     &:hover {
-        transform: scale(1.2);
+        @extend .transf-scale;
     }
     }
     .container {
@@ -87,6 +98,10 @@ body {
         border-radius: 15px;
         padding: 10px;
     }
+}
+.fadeIn {
+    opacity: 0;
+    animation: myAnimation 1s infinite;
 }
 /* Estilos para tablets (pantallas de 768px a 1024px) */
 @media (max-width: 1024px) {

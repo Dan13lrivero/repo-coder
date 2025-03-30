@@ -6,6 +6,9 @@
     <title>Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--AOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -39,47 +42,47 @@
     </header>
     <main class="text-white">
         <figure>
-            <h1 class="text-center">Follow me!</h1>
+            <h1 class="text-center animate__animated animate__backInDown">Follow me!</h1>
             <img class="d-block mx-auto" src="../assets/img/foto_blog.jpg" alt="foto en blanco y negro de hombre tocando la guitarra">
         </figure>
-        <section class="social_box">
+        <section data-aos="fade-right" class="social_box">
             <div class="d-flex justify-content-start img-fluid flex-wrap">
                 <a href="https://www.youtube.com/watch?v=vZqA14D1cdw&t=519s" target="_blank">
                     <img class="logos_blog" src="../assets/img/yt.png" alt="logo de youtube">
                 </a>
-            <p class="mx-auto fs-1">Live at Wacken Open Air 2019 (Full perfomance)</p>
+            <p class="mx-auto fs-1 fadeIn">Live at Wacken Open Air 2019 (Full perfomance)</p>
             </div>
         </section>
-        <section class="social_box">
+        <section data-aos="fade-left" class="social_box">
             <div class="d-flex justify-content-start img-fluid flex-wrap">
                 <a href="https://www.youtube.com/watch?v=837IO5-dijU&t=2s" target="_blank">
                     <img class="logos_blog" src="../assets/img/yt.png" alt="logo de youtube">
                 </a>
-            <p class="mx-auto fs-1">Live Session Sabraña Studios (Heresy Fest Online 2020)</p>
+            <p class="mx-auto fs-1 fadeIn">Live Session Sabraña Studios (Heresy Fest Online 2020)</p>
             </div>
         </section>
-        <section class="social_box">
+        <section data-aos="fade-right" class="social_box">
             <div class="d-flex justify-content-start img-fluid flex-wrap">
                 <a href="https://www.instagram.com/p/CDWOng8l-yX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
                     <img class="logos_blog" src="../assets/img/ig.png" alt="logo de instagram">
                 </a>
-            <p class="mx-auto fs-1">Crowdsurfing at W:O:A</p>
+            <p class="mx-auto fs-1 fadeIn">Crowdsurfing at W:O:A</p>
             </div>
         </section>
-        <section class="social_box">
+        <section data-aos="fade-left" class="social_box">
             <div class="d-flex justify-content-start img-fluid flex-wrap">
                 <a href="https://www.facebook.com/100002190823049/videos/677691779854127/" target="_blank">
                     <img class="logos_blog" src="../assets/img/fb.png" alt="logo de facebook">
                 </a>
-            <p class="mx-auto fs-1">Dropkick Murphys Cover (The State Of Massachusetts)</p>
+            <p class="fadeIn mx-auto fs-1">Dropkick Murphys Cover (The State Of Massachusetts)</p>
             </div>
         </section>
-        <section class="social_box">
+        <section data-aos="fade-right" class="social_box">
             <div class="d-flex justify-content-start img-fluid flex-wrap">
                 <a href="https://www.facebook.com/100002190823049/videos/1305305592885789/" target="_blank">
                     <img class="logos_blog" src="../assets/img/fb.png" alt="logo de facebook">
                 </a>
-            <p class="mx-auto fs-1">Johann Sebastian Bach - Bouree In E Minor</p>
+            <p class="mx-auto fs-1 fadeIn">Johann Sebastian Bach - Bouree In E Minor</p>
             </div>
         </section>
             <div class="carousel slide" id="carouselDemo"
@@ -118,5 +121,10 @@
     <p>2025 Daniel Rivero | All Rights Reserved</p>
 </footer> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+<script>
+  AOS.init();  // Inicializa AOS para activar las animaciones
+</script>
+
 </body>
 </html>
