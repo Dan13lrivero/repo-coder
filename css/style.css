@@ -1,17 +1,3 @@
-@charset "UTF-8";
-/* Variables */
-/* Mixin */
-/* Extend */
-.transf-scale, .redes:hover, .social_box .logos_blog:hover {
-  transform: scale(1.2); /* Aumenta el tamaño un 20% */
-}
-
-.mp, .social_box {
-  margin: 0 auto;
-  padding: 20px;
-  /* Animación */
-}
-
 @keyframes myAnimation {
   0% {
     opacity: 0;
@@ -20,12 +6,17 @@
     opacity: 1;
   }
 }
+.fadeIn {
+  opacity: 0;
+  animation: myAnimation 1s infinite;
+}
+
 * {
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Primer Nesting */
 body {
   background: linear-gradient(-45deg, blue, black, black);
 }
@@ -43,7 +34,15 @@ body main img {
   border-radius: 50%;
 }
 
-/* Segundo Nesting */
+.transf-scale, .redes:hover, .social_box .logos_blog:hover {
+  transform: scale(1.2);
+}
+
+.mp, .social_box {
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .social_box {
   width: 80%;
   height: auto;
@@ -72,8 +71,6 @@ body main img {
   object-fit: cover;
 }
 
-/* Comienzo de media queries*/
-/* Tamaño máximo desktop */
 @media (min-width: 1024px) {
   img {
     max-width: 400px !important;

@@ -1,0 +1,31 @@
+.social_box {
+    @include wh(80%, auto);
+    @extend .mp;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    .logos_blog {
+        @include wh(120px, 120px);
+        &:hover {
+            @extend .transf-scale;
+        }
+    }
+}
+.redes {
+    @include wh(80px, auto);
+    &:hover {
+        @extend .transf-scale;
+    }
+}
+.container {
+    max-width: 100%; 
+    padding: 20px;
+}
+.carousel .carousel-inner img {
+    border-radius: 0 !important;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover; 
+}
